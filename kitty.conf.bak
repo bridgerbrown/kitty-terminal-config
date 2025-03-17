@@ -3,6 +3,8 @@
 map ctrl+tab next_tab
 map ctrl+shift+tab previous_tab
 
+# zo/zc expand/collapse folds in nvim
+
 #: Fonts {{{
 
 #: kitty has very powerful font management. You can configure
@@ -23,7 +25,7 @@ map ctrl+shift+tab previous_tab
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 13.5
+font_size 14
 
 #: Font size (in pts).
 
@@ -1176,12 +1178,12 @@ tab_title_max_length 20
 
 #: Color scheme {{{
 
-# foreground #dddddd
-# background #000000
+#foreground #000000
+#background #000000
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+# background_opacity 0.85
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1774,7 +1776,7 @@ tab_title_max_length 20
 #: background_opacity. If you want to use both, you are probably
 #: better off just hiding the titlebar with hide_window_decorations.
 
-# macos_option_as_alt no
+macos_option_as_alt yes
 
 #: Use the Option key as an Alt key on macOS. With this set to no,
 #: kitty will use the macOS native Option+Key to enter Unicode
@@ -2411,7 +2413,7 @@ tab_title_max_length 20
 #: Toggle fullscreen
 
 # map kitty_mod+f11 toggle_fullscreen
-# map ctrl+cmd+f    toggle_fullscreen
+map cmd+f    toggle_fullscreen
 
 #: Toggle maximized
 
@@ -2612,6 +2614,6 @@ bold_italic_font auto
 
 
 # BEGIN_KITTY_THEME
-# Kanagawa_dragon
+# Kanagawa
 include current-theme.conf
 # END_KITTY_THEME
